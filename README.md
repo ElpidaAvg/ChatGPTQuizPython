@@ -1,7 +1,9 @@
-# ChatGPTQuiz 🎯
+# ChatGPTQuiz 🧠
 
-A simple desktop quiz application built with Python and Tkinter that
-generates yes/no questions using the OpenAI API.
+A simple GUI quiz application built with Python using Tkinter and
+OpenAI's API.\
+The app generates yes/no questions about world traditions and tracks
+your score interactively.
 
 ## 🖼️ Application Preview
 
@@ -9,59 +11,64 @@ generates yes/no questions using the OpenAI API.
 <img width="642" height="867" alt="Print screen (1)" src="https://github.com/user-attachments/assets/af15479f-f0ac-45fd-a336-e579bc1014e3" />
 </p>
 
-## 📌 Description
-
-ChatGPTQuiz is an interactive GUI-based quiz game where users answer
-simple yes/no questions about traditions around the world. The questions
-are dynamically generated using OpenAI's language model, making each
-quiz session unique.
-
 ## 🚀 Features
 
 -   Dynamic question generation using OpenAI API
--   Simple and clean GUI (Tkinter + ttk themes)
+-   Simple YES / NO interface
 -   Score tracking system
 -   Progress bar visualization
--   Restart option after quiz completion
+-   Restart functionality after 5 questions
+-   Clean themed UI using `ttkthemes`
 
 ## 🛠️ Technologies Used
 
 -   Python
 -   Tkinter
--   ttkthemes
+-   ttk / ttkthemes
 -   OpenAI API
 
-## ⚙️ Installation
+## 📦 Installation
 
 1.  Clone the repository:
 
-``` bash
-git clone https://github.com/your-username/ChatGPTQuiz.git
+```{=html}
+<!-- -->
 ```
+    git clone https://github.com/yourusername/ChatGPTQuiz.git
+    cd ChatGPTQuiz
 
 2.  Install dependencies:
 
-``` bash
-pip install openai ttkthemes
+```{=html}
+<!-- -->
 ```
+    pip install openai ttkthemes
 
 3.  Add your OpenAI API key: Replace:
 
-``` python
-client = openai.OpenAI(api_key="your API KEY")
+```{=html}
+<!-- -->
 ```
+    client = openai.OpenAI(api_key="your API KEY")
+
+with your actual API key.
 
 ## ▶️ Run the App
 
-``` bash
-python main.py
-```
+    python main.py
 
-## 📷 Preview
+## 🎮 How It Works
 
-A simple GUI with: - A question label - YES / NO buttons - Score
-display - Progress bar
+-   The app generates a yes/no question about global traditions.
+-   Click YES or NO to answer.
+-   Your score updates after each question.
+-   After 5 questions, you can restart the quiz.
+
+## ⚠️ Notes
+
+-   Requires internet connection for API calls
+-   Make sure your API key is valid
 
 ## 📄 License
 
-This project is open-source and available under the MIT License.
+This project is open-source and free to use.
